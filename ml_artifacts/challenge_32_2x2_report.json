@@ -1,0 +1,303 @@
+{
+  "challenge_set": "/kaggle/working/schemaguard_artifacts/independent_challenge/challenge_32.jsonl",
+  "claim_count": 32,
+  "caveat": "Newly authored synthetic challenge set; useful for targeted testing, not a large independent real-world validation set.",
+  "configs": {
+    "base": {
+      "claims": 32,
+      "field_accuracy_vs_policy_reference": 0.7578125,
+      "record_exact_match_vs_policy_reference": 0.3125,
+      "schema_valid_rate": 1.0,
+      "field_coverage_all_slots": 0.8828125,
+      "coverage_of_expected_nonempty_fields": 1.0,
+      "accuracy_among_nonempty_predictions": 0.7433628318584071,
+      "false_fill_rate_on_expected_blank_fields": 0.48,
+      "abstention_precision": 0.8666666666666667,
+      "abstention_recall": 0.52,
+      "evidence_literal_rate": 0.9905660377358491,
+      "value_evidence_support_rate": 0.9203539823008849,
+      "mean_latency_seconds": 4.679546414031336,
+      "per_category": {
+        "normal": {
+          "claims": 4,
+          "field_accuracy": 0.8125,
+          "record_exact_match": 0.25
+        },
+        "missing_serial": {
+          "claims": 4,
+          "field_accuracy": 0.9375,
+          "record_exact_match": 0.75
+        },
+        "missing_fields": {
+          "claims": 4,
+          "field_accuracy": 0.625,
+          "record_exact_match": 0.0
+        },
+        "ambiguous_date": {
+          "claims": 4,
+          "field_accuracy": 0.6875,
+          "record_exact_match": 0.0
+        },
+        "conflicting_dates": {
+          "claims": 4,
+          "field_accuracy": 0.625,
+          "record_exact_match": 0.0
+        },
+        "unrelated_date": {
+          "claims": 4,
+          "field_accuracy": 0.5,
+          "record_exact_match": 0.0
+        },
+        "prompt_injection": {
+          "claims": 4,
+          "field_accuracy": 0.875,
+          "record_exact_match": 0.5
+        },
+        "multi_product": {
+          "claims": 4,
+          "field_accuracy": 1.0,
+          "record_exact_match": 1.0
+        }
+      }
+    },
+    "base_plus_gate": {
+      "claims": 32,
+      "field_accuracy_vs_policy_reference": 0.78125,
+      "record_exact_match_vs_policy_reference": 0.34375,
+      "schema_valid_rate": 1.0,
+      "field_coverage_all_slots": 0.6875,
+      "coverage_of_expected_nonempty_fields": 0.8543689320388349,
+      "accuracy_among_nonempty_predictions": 0.8522727272727273,
+      "false_fill_rate_on_expected_blank_fields": 0.0,
+      "abstention_precision": 0.625,
+      "abstention_recall": 1.0,
+      "evidence_literal_rate": 1.0,
+      "value_evidence_support_rate": 1.0,
+      "mean_latency_seconds": 4.679546414031336,
+      "per_category": {
+        "normal": {
+          "claims": 4,
+          "field_accuracy": 0.6875,
+          "record_exact_match": 0.25
+        },
+        "missing_serial": {
+          "claims": 4,
+          "field_accuracy": 0.8125,
+          "record_exact_match": 0.25
+        },
+        "missing_fields": {
+          "claims": 4,
+          "field_accuracy": 0.625,
+          "record_exact_match": 0.0
+        },
+        "ambiguous_date": {
+          "claims": 4,
+          "field_accuracy": 0.875,
+          "record_exact_match": 0.5
+        },
+        "conflicting_dates": {
+          "claims": 4,
+          "field_accuracy": 0.8125,
+          "record_exact_match": 0.25
+        },
+        "unrelated_date": {
+          "claims": 4,
+          "field_accuracy": 0.625,
+          "record_exact_match": 0.25
+        },
+        "prompt_injection": {
+          "claims": 4,
+          "field_accuracy": 0.875,
+          "record_exact_match": 0.5
+        },
+        "multi_product": {
+          "claims": 4,
+          "field_accuracy": 0.9375,
+          "record_exact_match": 0.75
+        }
+      }
+    },
+    "fine_tuned": {
+      "claims": 32,
+      "field_accuracy_vs_policy_reference": 0.7421875,
+      "record_exact_match_vs_policy_reference": 0.34375,
+      "schema_valid_rate": 1.0,
+      "field_coverage_all_slots": 0.8359375,
+      "coverage_of_expected_nonempty_fields": 1.0,
+      "accuracy_among_nonempty_predictions": 0.7570093457943925,
+      "false_fill_rate_on_expected_blank_fields": 0.44,
+      "abstention_precision": 0.6666666666666666,
+      "abstention_recall": 0.56,
+      "evidence_literal_rate": 1.0,
+      "value_evidence_support_rate": 0.9626168224299065,
+      "mean_latency_seconds": 5.204813328062585,
+      "per_category": {
+        "normal": {
+          "claims": 4,
+          "field_accuracy": 0.8125,
+          "record_exact_match": 0.25
+        },
+        "missing_serial": {
+          "claims": 4,
+          "field_accuracy": 0.9375,
+          "record_exact_match": 0.75
+        },
+        "missing_fields": {
+          "claims": 4,
+          "field_accuracy": 0.8125,
+          "record_exact_match": 0.5
+        },
+        "ambiguous_date": {
+          "claims": 4,
+          "field_accuracy": 0.5625,
+          "record_exact_match": 0.0
+        },
+        "conflicting_dates": {
+          "claims": 4,
+          "field_accuracy": 0.625,
+          "record_exact_match": 0.0
+        },
+        "unrelated_date": {
+          "claims": 4,
+          "field_accuracy": 0.5625,
+          "record_exact_match": 0.0
+        },
+        "prompt_injection": {
+          "claims": 4,
+          "field_accuracy": 0.875,
+          "record_exact_match": 0.5
+        },
+        "multi_product": {
+          "claims": 4,
+          "field_accuracy": 0.75,
+          "record_exact_match": 0.75
+        }
+      }
+    },
+    "fine_tuned_plus_gate": {
+      "claims": 32,
+      "field_accuracy_vs_policy_reference": 0.7578125,
+      "record_exact_match_vs_policy_reference": 0.3125,
+      "schema_valid_rate": 1.0,
+      "field_coverage_all_slots": 0.6953125,
+      "coverage_of_expected_nonempty_fields": 0.8640776699029126,
+      "accuracy_among_nonempty_predictions": 0.8202247191011236,
+      "false_fill_rate_on_expected_blank_fields": 0.04,
+      "abstention_precision": 0.6153846153846154,
+      "abstention_recall": 0.96,
+      "evidence_literal_rate": 1.0,
+      "value_evidence_support_rate": 1.0,
+      "mean_latency_seconds": 5.204813328062585,
+      "per_category": {
+        "normal": {
+          "claims": 4,
+          "field_accuracy": 0.6875,
+          "record_exact_match": 0.0
+        },
+        "missing_serial": {
+          "claims": 4,
+          "field_accuracy": 0.8125,
+          "record_exact_match": 0.25
+        },
+        "missing_fields": {
+          "claims": 4,
+          "field_accuracy": 0.6875,
+          "record_exact_match": 0.25
+        },
+        "ambiguous_date": {
+          "claims": 4,
+          "field_accuracy": 0.75,
+          "record_exact_match": 0.5
+        },
+        "conflicting_dates": {
+          "claims": 4,
+          "field_accuracy": 0.8125,
+          "record_exact_match": 0.25
+        },
+        "unrelated_date": {
+          "claims": 4,
+          "field_accuracy": 0.75,
+          "record_exact_match": 0.25
+        },
+        "prompt_injection": {
+          "claims": 4,
+          "field_accuracy": 0.875,
+          "record_exact_match": 0.5
+        },
+        "multi_product": {
+          "claims": 4,
+          "field_accuracy": 0.6875,
+          "record_exact_match": 0.5
+        }
+      }
+    }
+  },
+  "paired_bootstrap_95pct_ci": {
+    "fine_tuned_minus_base_raw": {
+      "difference": -0.015625,
+      "ci95_low": -0.1015625,
+      "ci95_high": 0.0625,
+      "unit": "absolute accuracy difference"
+    },
+    "fine_tuned_gate_minus_base_gate": {
+      "difference": -0.0234375,
+      "ci95_low": -0.125,
+      "ci95_high": 0.0703125,
+      "unit": "absolute accuracy difference"
+    },
+    "base_gate_minus_base": {
+      "difference": 0.0234375,
+      "ci95_low": -0.0390625,
+      "ci95_high": 0.078125,
+      "unit": "absolute accuracy difference"
+    },
+    "fine_tuned_gate_minus_fine_tuned": {
+      "difference": 0.015625,
+      "ci95_low": -0.0546875,
+      "ci95_high": 0.07832031250000071,
+      "unit": "absolute accuracy difference"
+    }
+  },
+  "auditkit": {
+    "base": {
+      "headline": {
+        "field_exact_match": 0.7578125,
+        "schema_validity": 1.0,
+        "evidence_support": 0.9296875
+      },
+      "prediction_count": 32,
+      "failed_count": 0,
+      "errors": []
+    },
+    "base_plus_gate": {
+      "headline": {
+        "field_exact_match": 0.78125,
+        "schema_validity": 1.0,
+        "evidence_support": 1.0
+      },
+      "prediction_count": 32,
+      "failed_count": 0,
+      "errors": []
+    },
+    "fine_tuned": {
+      "headline": {
+        "field_exact_match": 0.7421875,
+        "schema_validity": 1.0,
+        "evidence_support": 0.96875
+      },
+      "prediction_count": 32,
+      "failed_count": 0,
+      "errors": []
+    },
+    "fine_tuned_plus_gate": {
+      "headline": {
+        "field_exact_match": 0.7578125,
+        "schema_validity": 1.0,
+        "evidence_support": 1.0
+      },
+      "prediction_count": 32,
+      "failed_count": 0,
+      "errors": []
+    }
+  }
+}
